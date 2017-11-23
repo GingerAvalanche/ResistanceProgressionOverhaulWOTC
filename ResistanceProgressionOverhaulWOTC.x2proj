@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>1663bfd4-e399-4623-b3f9-a932710e2f4a</Guid>
+    <Name>ResistanceProgressionOverhaulWOTC</Name>
+    <Description>Description of My XCOM 2 Mod.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>ResistanceProgressionOverhaulWOTC</AssemblyName>
+    <RootNamespace>ResistanceProgressionOverhaulWOTC</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Config\XComEditor.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComEngine.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGame.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameCore.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData_RPO.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComGameData_WeaponData_RPO.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComRPO_WOTC.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\ResistanceProgressionOverhaulWOTC.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\XComGame.int">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModPreview.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\UIScreenListener_LootRecovered_RPO.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2AbilityToHitCalc_ArcThrower.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2Ability_ArcThrower.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2DownloadableContentInfo_ResistanceProgressionOverhaulWOTC.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2Item_RPOArtifact.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2StrategyElement_Techs_ResistanceProgressionOverhaulWOTC.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="Content" />
+    <Folder Include="Localization" />
+    <Folder Include="Src" />
+    <Folder Include="Src\ResistanceProgressionOverhaulWOTC" />
+    <Folder Include="Src\ResistanceProgressionOverhaulWOTC\Classes" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>

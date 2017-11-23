@@ -1,0 +1,466 @@
+[ExperimentalAmmo X2TechTemplate]
+DisplayName="AP Rounds"
+Summary="Want enemies to fear your bullets? Use bluescreen rounds instead. But hey, if they're organics with armor, these work too." 
+
+[ExperimentalGrenade X2TechTemplate]
+DisplayName="Acid Grenade"
+Summary="It's like Andromedon in a can! Except without the revival protocol. Or the alien. So, not like an Andromedon." 
+
+[ExperimentalArmor X2TechTemplate]
+DisplayName="Hazmat Vest"
+Summary="This is the vest we give to Lopez every time he gets to clean up one of Tygan's botched autopsies." 
+
+[Bluescreen X2TechTemplate]
+DisplayName="Bluescreen Rounds"
+Summary="You're going to be building a lot of these. A lot of them." 
+
+[HeavyWeapons X2TechTemplate]
+DisplayName="Flamethrower"
+Summary="Dude, watch me light my cigarette."
+
+[AdvancedHeavyWeapons X2TechTemplate]
+DisplayName="Hellfire Projector"
+Summary="Okay, so I know Ramirez failed at this trick last time, but I totally got this: watch me light my cigarette."
+
+[ArcThrowing X2TechTemplate]
+DisplayName="Arc Throwing/Skull Damping"
+Summary="Zzzzzzzzap! Smells like Sectoid chicken."
+CodeName="Starkiller"
+LongDescription="Aliens don't like being shocked? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[DragonRoundsTech X2TechTemplate]
+DisplayName="Dragon Rounds"
+Summary="Okay, nevermind. THIS is Sectoid chicken."
+CodeName="OMGWTFBBQ"
+LongDescription="Aliens don't like being burned? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[HolotargetRoundsTech X2TechTemplate]
+DisplayName="Holotarget Rounds"
+Summary="Like hitting things? Give these to the scout. He won't hit a damn thing, but everyone else will!"
+CodeName="OMGWTFHAX"
+LongDescription="Aliens don't like being hit by bullets after being missed by bullets? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[TalonRoundsTech X2TechTemplate]
+DisplayName="Talon Rounds"
+Summary="Like critting things? Give these to the scout. He still won't crit a damn thing. That's XCOM, baby!"
+CodeName="OMGWTFHAX Mk II"
+LongDescription="Aliens don't like being shot in the balls? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[TracerRoundsTech X2TechTemplate]
+DisplayName="Tracer Rounds"
+Summary="Like hitting things? Give these to the scout. He still won't hit a damn thing. That's XCOM, baby!"
+CodeName="#OverwatchStoleTheName"
+LongDescription="Aliens don't like being shot? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[VenomRoundsTech X2TechTemplate]
+DisplayName="Venom Rounds"
+Summary="I... uh.... I wouldn't touch the corpse after these things kill it."
+CodeName="WhatsThatGoop?"
+LongDescription="Aliens don't like being poisoned? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[GasGrenadeTech X2TechTemplate]
+DisplayName="Gas Grenade"
+Summary="What's that smell? Eh, probably noth-URK!"
+CodeName="SomebodyFarted"
+LongDescription="Aliens don't like bad gas? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[IncendiaryGrenadeTech X2TechTemplate]
+DisplayName="Incendiary Grenade"
+Summary="Hm. I guess we're having BBQ, guys."
+CodeName="BBQ Mk II"
+LongDescription="Aliens don't like burning in a hellish inferno? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[BluescreenGrenadeTech X2TechTemplate]
+DisplayName="Bluescreen Grenade"
+Summary="Damnit! I was ALMOST to a save point!"
+CodeName="ThatsBSODBaby!"
+LongDescription="Machines don't like hardfaulting? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[PsiBombGrenadeTech X2TechTemplate]
+DisplayName="Psi Bomb"
+Summary="A grenade that only hurts my brain? How does that even...? Actually, I think it works."
+CodeName="BecauseLogic"
+LongDescription="Aliens don't like Purple Rain? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[ShredderGunTech X2TechTemplate]
+DisplayName="Shredder Gun"
+Summary="It's like a shotgun, except it actually works like a shotgun."
+CodeName="F@?#ThisDirection"
+LongDescription="Aliens don't like being torn to pulpy bits by hundreds of superheated pellets? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[BlasterLauncherTech X2TechTemplate]
+DisplayName="Blaster Launcher"
+Summary="It's like a rocket launcher, except it actually hits what you're aiming at instead of getting blocked by the cover you're standing behind."
+CodeName="F@?#ThisSpot"
+LongDescription="Aliens don't like being engulfed by explosions of plasmic hellfire? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[PlasmaBlasterTech X2TechTemplate]
+DisplayName="Plasma Blaster"
+Summary="Well, there WAS a wall here. Now there's a wall with a hole the size of your mom. HEY-OH!"
+CodeName="LikeATrainButExplodey"
+LongDescription="Aliens don't like being penetrated by gigantic plasma beams? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[ShredstormCannonTech X2TechTemplate]
+DisplayName="Shredstorm Cannon"
+Summary="Shred...storm? As in, one word? Who the hell names these things?"
+CodeName="#StupidName"
+LongDescription="Aliens don't like heavy weapon upgrades? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[FrenzyVestTech X2TechTemplate]
+DisplayName="Frenzy Vest"
+Summary="So, Jenkins put this thing on and then Central had to shoot him. So if you're wondering why we're short one scientist... that's why."
+CodeName="RAAAAAWWWWWWR"
+LongDescription="Aliens don't like fearsome battle cries? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[StasisVestTech X2TechTemplate]
+DisplayName="Stasis Vest"
+Summary="So, Sakamoto put this thing on and now he's frozen in place. Maybe forever. So if you're wondering why we're short another scientist... that's why."
+CodeName="..."
+LongDescription="Aliens don't like enemies who regenerate health? Tough shit. R. Tygan. P.S. Unexpected, but intriguing."
+UnlockedDescription=""
+
+[PlatedVestTech X2TechTemplate]
+DisplayName="Plated Vest"
+Summary="Originally, this was just a shirt with a bunch of dinner plates duct-taped to it. I honestly don't know why we changed it."
+CodeName="CatKnockedMeOffTheCounter"
+LongDescription="Aliens don't like dining flatware? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[HellweaveVestTech X2TechTemplate]
+DisplayName="Hellweave Vest"
+Summary="Each fiber of this vest has been dyed black by an angsty teenage girl pretending to be a Wiccan. That didn't really do anything, so we also set it on fire. GG Wiccans."
+CodeName="WhoThoughtThisWasAGoodIdea!?"
+LongDescription="Aliens don't like walking infernos? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[LightEleriumArmorTech X2TechTemplate]
+DisplayName="Psi Suit"
+Summary="I really, REALLY wanted this suit to be tuxedo, but Tygan informed me that standard cloth fibers don't hold Psi energy that well."
+CodeName="JamesBondPlusCrissAngel"
+LongDescription="Aliens don't like enemies who can warp reality? GEE, WHAT A COINCIDENCE. R. Tygan. P.S. Unexpected, but intriguing."
+UnlockedDescription=""
+
+[MediumEleriumArmorTech X2TechTemplate]
+DisplayName="Ghost Armor"
+Summary="I was really excited about this one, but then Tygan told me I couldn't make soldiers actually wear ghosts."
+CodeName="#Killjoy"
+LongDescription="Aliens don't like ghosts? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[HeavyEleriumArmorTech X2TechTemplate]
+DisplayName="Phoenix Armor"
+Summary="We started off with the idea of just coating this thing in napalm, but it didn't stick. So we made it an automaton instead. And it only took 2 more days of development time."
+CodeName="FawkesDidItBetter"
+LongDescription="Aliens don't like enemies coming back from the dead to keep killing them? Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[AutopsyADVMecMk2 X2TechTemplate]
+DisplayName="Advanced MEC Autopsy"
+Summary="This is just the same as a normal MEC, except painted red. That's it."
+CodeName="DaRedUnsGoFasta"
+LongDescription="There was one repeated line of code in every comment: \"Da Red 'Uns Go Fasta.\" Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[AdvTrooperInterrogation X2TechTemplate]
+DisplayName="ADVENT Trooper Interrogation"
+Summary="Interrogate the grunt."
+CodeName="Goomba"
+LongDescription="He didn't actually know anything. But we did manage to develop some armor based on how he resisted our torture techniques. Unexpected, but intriguing. R. Tygan. P.S. The Geneva Convention is so 'twenty years ago.'"
+UnlockedDescription=""
+
+[AdvStunLancerInterrogation X2TechTemplate]
+DisplayName="ADVENT Stun Lancer Interrogation"
+Summary="Interrogate the grunt with the glow stick."
+CodeName="RaveMaster"
+LongDescription="He didn't actually know anything either. But we did manage to develop some new ammo based on having random scientists shoot him, one after the other. Unexpected, but intriguing. R. Tygan. P.S. The Geneva Convention is so 'twenty years ago.'"
+UnlockedDescription=""
+
+[AdvOfficerInterrogation X2TechTemplate]
+DisplayName="ADVENT Officer Tom Interrogation"
+Summary="Interrogate the grunt with the fancy helmet and the nametag."
+CodeName="TooRoughForTom"
+LongDescription="Turns out this guy is the ADVENT Captain. Every single one of them. It's this one guy. His name is Tom. Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[AdvShieldbearerInterrogation X2TechTemplate]
+DisplayName="ADVENT Shieldbearer Interrogation"
+Summary="Interrogate the grunt who punches the ground."
+CodeName="GroundPuncher"
+LongDescription="Turns out the secret to semi-corporeal ballistic shielding is just punching the ground. Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[AdvPriestInterrogation X2TechTemplate]
+DisplayName="ADVENT Priest Interrogation"
+Summary="Interrogate the grunt who glows purple."
+CodeName="PurpleDrank!"
+LongDescription="Apparently, aliens really like the color purple. Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[AdvPurifierInterrogation X2TechTemplate]
+DisplayName="ADVENT Purifier Interrogation"
+Summary="Interrogate the grunt who likes fire. He, uh... he really likes fire."
+CodeName="ILikeFire"
+LongDescription="FIREFIREFIREFIREFIREFIREFIREFIREFIREFIREFIREFIREFIREFIREFIREFIRE. Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[AndromedonInterrogation X2TechTemplate]
+DisplayName="Andromedon Interrogation"
+Summary="Interrogate the sectoid in the clown suit."
+CodeName="SteelBathSuicide"
+LongDescription="It seems that sticking a living organism into a suit of armor will protect that organism from external damage. Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[ArchonInterrogation X2TechTemplate]
+DisplayName="Archon Interrogation"
+Summary="Interrogate the naked half-dude."
+CodeName="HowComeHeGetsAJetpack"
+LongDescription="Flying is fun. Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[BerserkerInterrogation X2TechTemplate]
+DisplayName="Berserker Interrogation"
+Summary="Interrogate the full-naked buff dude-thing."
+CodeName="WHARGARBL"
+LongDescription="You wouldn't like him when he's angry. Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[ChryssalidInterrogation X2TechTemplate]
+DisplayName="Chryssalid Interrogation"
+Summary="Interrogate the pointy thing."
+CodeName="SizeMattersNot"
+LongDescription="Did you really expect us to be able to communicate with this thing? It doesn't even have a brain! It's just, like, spines and probosces and rage! Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[CodexInterrogation X2TechTemplate]
+DisplayName="Codex Interrogation"
+Summary="Interrogate... the... dude, it's a machine...? You really want me to....? *sigh* One zero zero zero one one zero one zero..."
+CodeName="CyberMeCyberYouCyberus"
+LongDescription="He's actually a really nice guy. It seems his name is actually Cyberus, and he thinks it's really rude we keep calling him 'codex.' Also, despite the boobs, totally not a lady. Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[FacelessInterrogation X2TechTemplate]
+DisplayName="Faceless Interrogation"
+Summary="Interrogate Zoidberg"
+CodeName="WOOBWOOBWOOBWOOBWOOB"
+LongDescription="The spatiotemporal compression field requires immense power and has a side effect of producing immense amounts of borderline-destructive effluvia. Unexpected, but intriguing. R. Tygan. P.S. Translation? He has gas."
+UnlockedDescription=""
+
+[GatekeeperInterrogation X2TechTemplate]
+DisplayName="Gatekeeper Interrogation"
+Summary="Interrogate the gigantic hamster ball."
+CodeName="WOOBWOOBWOOBWOOBWOOB"
+LongDescription="The spatiotemporal compression field requires immense power and has a side effect of producing immense amounts of borderline-destructive effluvia. Unexpected, but intriguing. R. Tygan. P.S. Translation? He has gas."
+UnlockedDescription=""
+
+[MutonInterrogation X2TechTemplate]
+DisplayName="Muton Interrogation"
+Summary="Interrogate the American football player."
+CodeName="BlueFortyTwoHike"
+LongDescription="Contrary to popular belief, there ARE lifeforms dumber than the standard American football player. Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[SectoidInterrogation X2TechTemplate]
+DisplayName="Sectoid Interrogation"
+Summary="Interrogate the naked Ken doll."
+CodeName="AyyLmao"
+LongDescription="It turns out, this entire time, he's just had something stuck in his throat. He actually speaks English quite well. Such a gentleman. Shame he ran into my knife. Ten times. Unexpected, but intriguing. R. Tygan. P.S. He had it coming."
+UnlockedDescription=""
+
+[SpectreInterrogation X2TechTemplate]
+DisplayName="Spectre Interrogation"
+Summary="Interrogate the thing with no mouth. How can it speak if it has no mouth?"
+CodeName="MmmmmmmmmisterAnderson"
+LongDescription="For not having a mouth, this thing would JUST. NOT. SHUT. UP. Unexpected, but intriguing. R. Tygan. P.S. He had it coming too."
+UnlockedDescription=""
+
+[ViperInterrogation X2TechTemplate]
+DisplayName="Viper Interrogation"
+Summary="Interrogate the boob snake. And maybe sleep with it, too."
+CodeName="BoobsAreGoodMkay"
+LongDescription="The snake tried to seduce me. Unfortunately, I'm gay. I know what you're thinking: Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[AdvMECInterrogation X2TechTemplate]
+DisplayName="ADVENT MEC Interrogation"
+Summary="Interrogate the Six Billion Dollar Man."
+CodeName="ShoulderMountedGrenadeLauncher"
+LongDescription="We actually got along really well. It even gave me its shoulder-mounted grenade launcher. Unfortunately, I dropped it. Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[AdvMECMk2Interrogation X2TechTemplate]
+DisplayName="The Other ADVENT MEC Interrogation"
+Summary="Interrogate the Six Billion And One Dollar Man."
+CodeName="RedShoulderMountedGrenadeLauncher"
+LongDescription="We also got along really well. It gave me its shoulder-mounted grenade launcher, too. This time, I intentionally destroyed it. Ha, no shoulder launcher for Obe! Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[SectopodInterrogation X2TechTemplate]
+DisplayName="Sectopod Interrogation"
+Summary="Interrogate the Imperial Walker."
+CodeName="YouMayFireWhenReady"
+LongDescription="Yes, Lord Vader. I've reached the main power generators. The shield will be down in moments. You may start your landing. Unexpected, but intriguing. R. Tygan."
+UnlockedDescription=""
+
+[GrenadeLauncher_BM X2GrenadeLauncherTemplate]
+FriendlyName="More Advanced Grenade Launcher"
+FriendlyNamePlural="More Advanced Grenade Launchers"
+BriefSummary="Our More Advanced Grenade Launcher uses plasma technology to propel grenades further than our magnetic launcher, and grants a larger effect radius to any launched projectiles. How? I don't know."
+TacticalText="<Bullet/> The More Advanced Grenade Launcher has an increased range and explosive radius over the Advanced Grenade Launcher.\n."
+AbilityDescName="grenade launcher"
+
+[GrenadeLauncher_BM_Schematic X2SchematicTemplate]
+m_strClassLabel="GRENADIER"
+
+[HolotargetRounds X2AmmoTemplate]
+FriendlyName="Holotarget Rounds"
+FriendlyNamePlural="Holotarget Rounds"
+BriefSummary="Containing high tech \"smart rounds\" that relay detailed tracking data back to the shooter's allies when fired, this specialized ammo adds +<Ability:HOLOTARGETAIMBONUS/> to any subsequent shots against the target when equipped."
+TacticalText="<Bullet/>Tracer rounds grant bonus aim to allies against any enemy fired at by the user when equipped.<br>"
+
+[MediumEleriumArmor X2ArmorTemplate]
+FriendlyName="Ghost Armor"
+FriendlyNamePlural="Ghost Armor"
+BriefSummary="Our previous mastery of Elerium was not mastery at all. Our new mastery of the alien's Elerium technology has lead us to the actual ultimate in battle armor: the Ghost Armor. Elerium-based armor provides impossible levels of survivability and versatility in the battle against increasingly powerful alien enemies."
+TacticalText="<Bullet/> Ghost Armor is better than the best medium-class armor available.\n<Bullet/> Ghost Armor has 2 inventory item slots.\n<Bullet/> Ghost Armor is also outfitted with a grapple, the ability to phase through walls, and an active camouflage suite that hides the user from enemy sight."
+
+[LightEleriumArmor X2ArmorTemplate]
+FriendlyName="Psi Suit"
+FriendlyNamePlural="Psi Suits"
+BriefSummary="The lightweight variant of our Elerium armor system not only boosts our soldiers' reflexes and speed, it also incorporates experimental Psionic technology, granting the wearer limited precognition that allows them to avoid the most dangerous attacks, the ability to move across the battlefield unhindered, and the ability to manifest cover at any time."
+TacticalText="<Bullet/> The Psi Suit adds mobility and an increased chance of taking grazing shots instead of outright hits.\n<Bullet/> The Psi Suit grants limited Precognition, making the wearer immune to critical hits.\n<Bullet/> The Psi Suit can allow the wearer to summon a full-cover obstacle.\n<Bullet/> The Psi Suit allows the wearer to tap into the latent human psionic potential to leap tall buildings in a single bound."
+
+[HeavyEleriumArmor X2ArmorTemplate]
+FriendlyName="Phoenix Armor"
+FriendlyNamePlural="Phoenix Armor"
+BriefSummary="This Elerium-based heavy battle armor grants massive resilience and survivability, as well as a wrist-mounted heavy weapon hardpoint. The Phoenix Armor can also generate temporary cover for allies with its powerful \"Shieldwall\" technology, as well as protect its wearer from death."
+TacticalText="<Bullet/> The Phoenix Armor allows a soldier to wrist mount a heavy weapon.\n<Bullet/> The Phoenix Armor grants the \"Shieldwall\" ability, allowing the wearer to temporarily act as high cover for squadmates.\n<Bullet/> The Phoenix Armor contains the Phoenix Protocol, which will protect the wearer from death, as long as the suit remains intact."
+
+[PsiBombGrenade X2GrenadeTemplate]
+FriendlyName="Psi Bomb"
+FriendlyNamePlural="Psi Bombs"
+BriefSummary="The replacement of conventional explosive with a sort of packed psionic potential results in an explosive that can damage almost any enemy, in almost any situation, even through cover and armor."
+TacticalText="<Bullet/> Psi bombs ignore 5 points of armor.<br><Bullet/> Psi bombs do not do any environmental damage."
+ThrownAbilityName="Throw Psi Bomb"
+ThrownAbilityHelpText="Creates a psionic explosion that will ignore cover and armor."
+LaunchedAbilityname="Launch Psi Bomb"
+LaunchedAbilityHelpText="Creates a psionic explosion that will ignore cover and armor."
+
+[CapturedAdventTrooper X2ItemTemplate]
+FriendlyName="Captured ADVENT Trooper"
+FriendlyNamePlural="Captured ADVENT Troopers"
+BriefSummary="Passable as human when hidden behind their armor, in death the alien features and orange blood of the ADVENT troopers reveal a more sinister pedigree." 
+
+[CapturedAdventCaptain X2ItemTemplate]
+FriendlyName="Captured ADVENT Officer"
+FriendlyNamePlural="Captured ADVENT Officers"
+BriefSummary="Despite the heavier ornamentation on their battle armor, the bodies of ADVENT Officers are indistinguishable from regular troopers save for a thick red scar on the back of their skulls." 
+
+[CapturedAdventTurret X2ItemTemplate]
+FriendlyName="Captured ADVENT Turret Wreck"
+FriendlyNamePlural="Captured ADVENT Turret Wrecks"
+BriefSummary="Reinforced armor plating has kept the wrecks of these turrets mostly intact after combat, but their inner workings are heavily damaged, likely the result of internal self-destruction charges."
+
+[CapturedAdventStunLancer X2ItemTemplate]
+FriendlyName="Captured ADVENT Stun Lancer"
+FriendlyNamePlural="Captured ADVENT Stun Lancers"
+BriefSummary="As rigor mortis sets in, the lips of Stun Lancers invariably peel back into a garish grin, likely a reflexive result due to dangerous doses of combat stimulants taken before battle."
+
+[CapturedAdventShieldBearer X2ItemTemplate]
+FriendlyName="Captured ADVENT Shieldbearer"
+FriendlyNamePlural="Captured ADVENT Shieldbearers"
+BriefSummary="These cadavers exhibit far more muscle and bone density than other ADVENT bodies we've recovered, and remain surprisingly warm to the touch for hours after their death." 
+
+[CapturedAdventPsiWitch X2ItemTemplate]
+FriendlyName="Captured Avatar"
+FriendlyNamePlural="Captured Avatars"
+BriefSummary="This body exhibits no signs of decomposition, and initial scans show a disconcerting level of lower-order brain activity. Reports of auditory hallucinations from the staff that handled this specimen are disturbing, but as yet they are unsubstantiated."
+
+[CapturedAdventMEC X2ItemTemplate]
+FriendlyName="Captured ADVENT MEC"
+FriendlyNamePlural="Captured ADVENT MECs"
+BriefSummary="Much of the articulation, weapon and power systems that comprise these \"MEC\" units bear a striking similarity to early robotic combat prototypes devised by the late Dr. Shen."
+
+[CapturedAdventMECMk2 X2ItemTemplate]
+FriendlyName="Captured ADVENT MEC Mk2"
+FriendlyNamePlural="Captured ADVENT MEC Mk2s"
+BriefSummary="Much of the articulation, weapon and power systems that comprise these \"MEC\" units bear a striking similarity to early robotic combat prototypes devised by the late Dr. Shen."
+
+[CapturedSectoid X2ItemTemplate]
+FriendlyName="Captured Sectoid"
+FriendlyNamePlural="Captured Sectoids"
+BriefSummary="Expired sectoids tend to shrivel and curl in on themselves like spiders, regaining some likeness to the smaller, more feral creatures that we faced in the first war." 
+
+[CapturedAndromedon X2ItemTemplate]
+FriendlyName="Captured Andromedon"
+FriendlyNamePlural="Captured Andromedons"
+BriefSummary="The \"pilot\" organism of the Andromedon battle suit appears surprisingly frail, and smolders faintly when exposed to our seemingly toxic environment."  
+
+[CapturedViper X2ItemTemplate]
+FriendlyName="Captured Viper"
+FriendlyNamePlural="Captured Vipers"
+BriefSummary="The Vipers' powerful tail muscles continue to clench reflexively for hours after their death, though precautionary brain imaging shows no trace of higher-order function." 
+
+[CapturedArchon X2ItemTemplate]
+FriendlyName="Captured Archon"
+FriendlyNamePlural="Captured Archons"
+BriefSummary="Beneath its elegant exterior, the Archon is a surprisingly haphazard combination of flesh and metal."
+
+[CapturedMuton X2ItemTemplate]
+FriendlyName="Captured Muton"
+FriendlyNamePlural="Captured Mutons"
+BriefSummary="Hidden beneath their battle armor, intricate tattoos and ritualized scarring make clear the Muton's continuing dedication to their tribal hierarchy." 
+
+[CapturedChryssalid X2ItemTemplate]
+FriendlyName="Captured Chryssalid"
+FriendlyNamePlural="Captured Chryssalids"
+BriefSummary="The extreme toxicity of the Chryssalid venom requires individual specimen storage in reinforced caskets, each of which have been securely padlocked upon the advice of veteran combat staff." 
+
+[CapturedSectopod X2ItemTemplate]
+FriendlyName="Captured Sectopod"
+FriendlyNamePlural="Captured Sectopods"
+BriefSummary="Behind the utilitarian and nearly featureless outer plating of the Sectopod lies an almost delicate frame of alien alloys hung with countless clusters of targeting computers and elerium power nodes."
+
+[CapturedFaceless X2ItemTemplate]
+FriendlyName="Captured Faceless"
+FriendlyNamePlural="Captured Faceless"
+BriefSummary="Requiring storage in sealed medical-grade vats, whatever remains the Faceless leave behind dissolve rapidly into a foul smelling paste."
+
+[CapturedCyberus X2ItemTemplate]
+FriendlyName="Captured Codex"
+FriendlyNamePlural="Captured Codices"
+BriefSummary="The Codex leaves only this small, nearly featureless \"brain\" when it expires, which has proven remarkably resistant to biological or mechanical scans of any kind."
+
+[CapturedGatekeeper X2ItemTemplate]
+FriendlyName="Captured Gatekeeper"
+FriendlyNamePlural="Captured Gatekeepers"
+BriefSummary="The organism within the Gatekeeper's shell is highly unusual, seemingly reliant on the shell itself for sensory input. Long sequences of engraved symbols not unlike ancient hieroglyphs adorn the inner lining of the shell."
+
+[CapturedBerserker X2ItemTemplate]
+FriendlyName="Captured Berserker"
+FriendlyNamePlural="Captured Berserkers"
+BriefSummary="Long after the massive Berserker has expired, its chemical pumps continue to forcefully inject powerful stimulants and painkillers into its lifeless body."
+
+[CapturedAdvTurret X2ItemTemplate]
+FriendlyName="Captured Turret"
+FriendlyNamePlural="Captured Turrets"
+BriefSummary="Long after the massive Turret has expired, its chemical pumps continue to forcefully inject powerful stimulants and painkillers into its lifeless body. Sounds a lot like the Berserker, actually...?"
+
+[CorpseAdventMECMk2 X2ItemTemplate]
+FriendlyName="ADVENT MEC Mk2 Wreck"
+FriendlyNamePlural="ADVENT MEC Mk2 Wrecks"
+BriefSummary="Much of the articulation, weapon and power systems that comprise these \"MEC\" units bear a striking similarity to early robotic combat prototypes devised by the late Dr. Shen."
