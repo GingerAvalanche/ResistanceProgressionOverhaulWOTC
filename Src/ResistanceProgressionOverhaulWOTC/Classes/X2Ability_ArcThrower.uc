@@ -78,6 +78,8 @@ static function X2AbilityTemplate ArcThrowerAbility() // TODO: Change everything
 	UnitTypeCondition.ExcludeTypes.AddItem('ArchonKing');
 	UnitTypeCondition.ExcludeTypes.AddItem('ViperKing');
 	Template.AbilityTargetConditions.AddItem(UnitTypeCondition);
+	Template.AbilityTargetConditions.AddItem(default.LivingHostileTargetProperty);
+	Template.AbilityTargetConditions.AddItem(default.MeleeVisibilityCondition);
 
 	SkipExclusions.AddItem(class'X2StatusEffects'.default.BurningName);
 	Template.AddShooterEffectExclusions(SkipExclusions);
