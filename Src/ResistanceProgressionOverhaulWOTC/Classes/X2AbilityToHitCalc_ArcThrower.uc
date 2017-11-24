@@ -13,8 +13,8 @@ var config int CLAMPED_MAX;			//  absolute maximum hit chance
 function RollForAbilityHit(XComGameState_Ability kAbility, AvailableTarget kTarget, out AbilityResultContext ResultContext)
 {
 	local int Chance, RandRoll;
-	local XComGameState_Unit TargetUnit;
-	local XComGameStateHistory History;
+	//local XComGameState_Unit TargetUnit;
+	//local XComGameStateHistory History;
 	local ShotBreakdown m_ShotBreakdown;
 
 	ResultContext.HitResult = eHit_Miss;

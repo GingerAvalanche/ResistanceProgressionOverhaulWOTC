@@ -49,6 +49,7 @@ static function X2AbilityTemplate ArcThrowerAbility()
 	ActionPointCost = new class'X2AbilityCost_ActionPoints';
 	ActionPointCost.iNumPoints = 1;
 	ActionPointCost.bConsumeAllPoints = false; // Change to true on ship
+	ActionPointCost.bFreeCost = true; // for testing purposes
 	Template.AbilityCosts.AddItem(ActionPointCost);
 
 	if (default.ARCTHROWER_COOLDOWN > 0)

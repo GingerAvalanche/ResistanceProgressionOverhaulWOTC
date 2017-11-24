@@ -239,15 +239,15 @@ static function PatchGrenades()
 {
 	local X2ItemTemplateManager ItemTemplateManager;
 	local X2ItemTemplate ItemTemplate;
-	local ArtifactCost Resources, Artifacts;
+	//local ArtifactCost Resources, Artifacts;
 
 	ItemTemplateManager = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
 	
 	ItemTemplate = ItemTemplateManager.FindItemTemplate('EMPGrenade');
 	if (class'X2StrategyElement_Techs_ResistanceProgressionOverhaulWOTC'.default.bBuildGrenadesInEngineering)
 	{
-		ItemTemplate.RequiredTechs.Length = 0;
-		ItemTemplate.RequiredTechs.AddItem('BluescreenGrenadeTech');
+		ItemTemplate.Requirements.RequiredTechs.Length = 0;
+		ItemTemplate.Requirements.RequiredTechs.AddItem('BluescreenGrenadeTech');
 	}
 	else
 	{

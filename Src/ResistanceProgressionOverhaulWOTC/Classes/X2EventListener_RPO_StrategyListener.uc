@@ -26,7 +26,7 @@ static function CHEventListenerTemplate CreateListenerTemplate_OnCleanupTactical
 
 static function EventListenerReturn OnCleanupTacticalMission(Object EventData, Object EventSource, XComGameState GameState, Name Event, Object CallbackData)
 {
-	local XComGameStateHistory				History;
+	//local XComGameStateHistory				History;
     local XComGameState_BattleData			BattleData;
 	local XGBattle_SP						Battle;
 	local XGAIPlayer_TheLost				LostPlayer;
@@ -38,7 +38,7 @@ static function EventListenerReturn OnCleanupTacticalMission(Object EventData, O
 	local LootReference						UnitLoot;
 	local array<name>						RolledLoot;
 	
-	History = `XCOMHISTORY;
+	//History = `XCOMHISTORY;
 	BattleData = XComGameState_BattleData(EventData);
 	Battle = XGBattle_SP(`BATTLE);
 	LootManager = class'X2LootTableManager'.static.GetLootTableManager();
@@ -47,7 +47,7 @@ static function EventListenerReturn OnCleanupTacticalMission(Object EventData, O
 	
 	if(BattleData.IsMultiplayer())
 	{
-		return; // How are we in multiplayer?
+		return ELR_NoInterrupt; // How are we in multiplayer?
 	}
 	else
 	{
@@ -94,4 +94,6 @@ static function EventListenerReturn OnCleanupTacticalMission(Object EventData, O
 			}
 		}
 	}
+
+	return ELR_NoInterrupt;
 }
