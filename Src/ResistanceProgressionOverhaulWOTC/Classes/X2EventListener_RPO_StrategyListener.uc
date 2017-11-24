@@ -15,8 +15,8 @@ static function CHEventListenerTemplate CreateListenerTemplate_OnCleanupTactical
 
     `CREATE_X2TEMPLATE(class'CHEventListenerTemplate', Template, 'RPOCleanupTacticalMission');
 
-    Template.RegisterInTactical = false;
-    Template.RegisterInStrategy = true;
+    Template.RegisterInTactical = true;
+    Template.RegisterInStrategy = false;
 
     Template.AddCHEvent('CleanupTacticalMission', OnCleanupTacticalMission, ELD_OnStateSubmitted);
     `LOG("Register Event CleanupTacticalMission",, 'RPO');
