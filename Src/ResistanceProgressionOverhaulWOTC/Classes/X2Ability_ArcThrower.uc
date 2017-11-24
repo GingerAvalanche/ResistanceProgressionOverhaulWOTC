@@ -84,6 +84,7 @@ static function X2AbilityTemplate ArcThrowerAbility()
 
 	UnitPropertyCondition = default.LivingHostileTargetProperty;
 	UnitPropertyCondition.TreatMindControlledSquadmateAsHostile = false;
+	UnitPropertyCondition.ExcludeCivilian = true;
 	Template.AbilityTargetConditions.AddItem(UnitPropertyCondition);
 
 	Template.AbilityTargetConditions.AddItem(default.MeleeVisibilityCondition);
