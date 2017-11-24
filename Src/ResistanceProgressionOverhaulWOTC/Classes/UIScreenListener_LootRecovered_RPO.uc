@@ -1,5 +1,7 @@
 class UIScreenListener_LootRecovered_RPO extends UIScreenListener;
 
+// DEPRECATED
+/*
 event OnInit(UIScreen Screen)
 {
 	//local UIInventory_LootRecovered			ParentScreen;
@@ -77,4 +79,4 @@ event OnInit(UIScreen Screen)
 defaultproperties
 {
 	ScreenClass = class'UIInventory_LootRecovered';
-}
+}*/

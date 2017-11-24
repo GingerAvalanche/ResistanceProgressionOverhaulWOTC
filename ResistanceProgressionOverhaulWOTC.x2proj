@@ -52,6 +52,9 @@
     <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2DownloadableContentInfo_ResistanceProgressionOverhaulWOTC.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2EventListener_RPO_StrategyListener.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2Item_RPOArtifact.uc">
       <SubType>Content</SubType>
     </Content>

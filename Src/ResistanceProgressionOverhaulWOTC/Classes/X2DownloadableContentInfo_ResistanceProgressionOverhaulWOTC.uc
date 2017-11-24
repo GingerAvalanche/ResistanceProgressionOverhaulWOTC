@@ -174,6 +174,11 @@ static function PatchProvingGroundProjects()
 	TechTemplate = X2TechTemplate(StratMgr.FindStrategyElementTemplate('BattlefieldMedicine'));
 	TechTemplate.Requirements.RequiredTechs.Length = 0;
 	TechTemplate.Requirements.RequiredTechs.AddItem('ViperInterrogation');
+
+	// Advanced Explosives
+	TechTemplate = X2TechTemplate(StratMgr.FindStrategyElementTemplate('AdvancedGrenades'));
+	TechTemplate.Requirements.RequiredTechs.Length = 0;
+	TechTemplate.Requirements.RequiredTechs.AddItem('AutopsyBerserker');
 }
 
 static function PatchResearchProjects()
@@ -238,11 +243,11 @@ static function PatchGrenades()
 
 	ItemTemplateManager = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
 	
-	ItemTemplate = ItemTemplateManager.FindItemTemplate(‘EMPGrenade’);
-	if (class’X2StrategyElement_Techs_ResistanceProgressionOverhaulWOTC’.default.bBuildGrenadesInEngineering)
+	ItemTemplate = ItemTemplateManager.FindItemTemplate('EMPGrenade');
+	if (class'X2StrategyElement_Techs_ResistanceProgressionOverhaulWOTC'.default.bBuildGrenadesInEngineering)
 	{
 		ItemTemplate.RequiredTechs.Length = 0;
-		ItemTemplate.RequiredTechs.AddItem(‘BluescreenGrenadeTech’);
+		ItemTemplate.RequiredTechs.AddItem('BluescreenGrenadeTech');
 	}
 	else
 	{
@@ -347,6 +352,10 @@ static function PatchItems()
 	ItemTemplate = ItemTemplateManager.FindItemTemplate('MimicBeacon');
 	ItemTemplate.Requirements.RequiredTechs.Length = 0;
 	ItemTemplate.Requirements.RequiredTechs.AddItem('FacelessInterrogation');
+	
+	ItemTemplate = ItemTemplateManager.FindItemTemplate('CombatStims');
+	ItemTemplate.Requirements.RequiredTechs.Length = 0;
+	ItemTemplate.Requirements.RequiredTechs.AddItem('BerserkerInterrogation');
 }
 
 static function PatchWeapons()
