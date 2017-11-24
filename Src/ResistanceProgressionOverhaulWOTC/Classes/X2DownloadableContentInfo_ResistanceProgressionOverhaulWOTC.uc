@@ -11,6 +11,7 @@ static event OnPostTemplatesCreated()
 	PatchArmors();
 	PatchItems();
 	PatchWeapons();
+	PatchAbilities();
 }
 
 static function PatchArcThrowingIntoSkullJack()
@@ -366,4 +367,24 @@ static function PatchWeapons()
 	//ItemTemplateManager = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
 	
 	//Placeholder. Will be used eventually.
+}
+
+static function PatchAbilities()
+{
+	local X2AbilityTemplateManager	AbilityManager;
+	local X2AbilityTemplate			Ability;
+	local X2Effect_DamageImmunity	DamageImmunity;
+
+	AbilityManager = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
+
+	Ability = AbilityManager.FindAbilityTemplate('RobotImmunities');
+	DamageImmunity = new class'X2Effect_DamageImmunity';
+	DamageImmunity.BuildPersistentEffect(1, true, true, true);
+	DamageImmunity.SetDisplayInfo(ePerkBuff_Passive, Ability.LocFriendlyName, Ability.GetMyLongDescription(), Ability.IconImage,,,Ability.AbilitySourceName);
+	DamageImmunity.ImmuneTypes.AddItem('Fire');
+	DamageImmunity.ImmuneTypes.AddItem('Poison');
+	DamageImmunity.ImmuneTypes.AddItem(class'X2Item_DefaultDamageTypes'.default.ParthenogenicPoisonType);
+	//DamageImmunity.ImmuneTypes.AddItem('Unconscious'); // Make robots unconsciousable!
+	DamageImmunity.ImmuneTypes.AddItem('Panic');
+	Ability.AddTargetEffect(DamageImmunity);
 }
