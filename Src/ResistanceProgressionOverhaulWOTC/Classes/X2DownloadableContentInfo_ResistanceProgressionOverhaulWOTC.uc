@@ -374,6 +374,7 @@ static function PatchAbilities()
 	local X2AbilityTemplateManager	AbilityManager;
 	local X2AbilityTemplate			Ability;
 	local X2Effect_DamageImmunity	DamageImmunity;
+	local X2Condition_UnitProperty	LivingHostileTargetProperty; // This is a copy of the protected X2Ability variable, because the original is protected.
 
 	AbilityManager = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
 
@@ -387,4 +388,13 @@ static function PatchAbilities()
 	//DamageImmunity.ImmuneTypes.AddItem('Unconscious'); // Make robots unconsciousable!
 	DamageImmunity.ImmuneTypes.AddItem('Panic');
 	Ability.AddTargetEffect(DamageImmunity);
+
+	Ability = AbilityManager.FindAbilityTemplate('SKULLMINEAbility');
+	LivingHostileTargetProperty = new class'X2Condition_UnitProperty';
+	LivingHostileTargetProperty.ExcludeAlive=false;
+	LivingHostileTargetProperty.ExcludeDead=true;
+	LivingHostileTargetProperty.ExcludeFriendlyToSource=true;
+	LivingHostileTargetProperty.ExcludeHostileToSource=false;
+	LivingHostileTargetProperty.TreatMindControlledSquadmateAsHostile=true;
+	Ability.AbilityTargetConditions.AddItem(LivingHostileTargetProperty); // Vanilla Skullmine can target unconscious. Haven't figured out how, but default exclusions seem to fix it.
 }
