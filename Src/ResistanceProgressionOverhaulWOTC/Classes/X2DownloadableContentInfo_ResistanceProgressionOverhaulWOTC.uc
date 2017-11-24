@@ -239,7 +239,12 @@ static function PatchGrenades()
 	ItemTemplateManager = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
 	
 	ItemTemplate = ItemTemplateManager.FindItemTemplate(‘EMPGrenade’);
-	if (!class’X2StrategyElement_Techs_ResistanceProgressionOverhaulWOTC’.default.bBuildGrenadesInEngineering)
+	if (class’X2StrategyElement_Techs_ResistanceProgressionOverhaulWOTC’.default.bBuildGrenadesInEngineering)
+	{
+		ItemTemplate.RequiredTechs.Length = 0;
+		ItemTemplate.RequiredTechs.AddItem(‘BluescreenGrenades’);
+	}
+	else
 	{
 		ItemTemplate.CanBeBuilt = false;
 	}
