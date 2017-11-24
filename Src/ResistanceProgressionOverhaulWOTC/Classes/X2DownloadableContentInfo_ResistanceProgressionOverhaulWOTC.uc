@@ -242,7 +242,7 @@ static function PatchGrenades()
 	if (class’X2StrategyElement_Techs_ResistanceProgressionOverhaulWOTC’.default.bBuildGrenadesInEngineering)
 	{
 		ItemTemplate.RequiredTechs.Length = 0;
-		ItemTemplate.RequiredTechs.AddItem(‘BluescreenGrenades’);
+		ItemTemplate.RequiredTechs.AddItem(‘BluescreenGrenadeTech’);
 	}
 	else
 	{
