@@ -254,6 +254,17 @@ static function PatchGrenades()
 	{
 		ItemTemplate.CanBeBuilt = false;
 	}
+	
+	ItemTemplate = ItemTemplateManager.FindItemTemplate('ProximityMine');
+	if (class'X2StrategyElement_Techs_ResistanceProgressionOverhaulWOTC'.default.bBuildGrenadesInEngineering)
+	{
+		ItemTemplate.Requirements.RequiredTechs.Length = 0;
+		ItemTemplate.Requirements.RequiredTechs.AddItem('ProximityMineTech');
+	}
+	else
+	{
+		ItemTemplate.CanBeBuilt = false;
+	}
 }
 
 static function PatchVests()

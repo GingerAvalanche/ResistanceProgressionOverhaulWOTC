@@ -24,6 +24,7 @@ static function array<X2DataTemplate> CreateTemplates()
 	Techs.AddItem(CreateIncendiaryGrenadeTemplate());
 	Techs.AddItem(CreateBluescreenGrenadeTemplate());
 	Techs.AddItem(CreatePsiBombGrenadeTemplate());
+	Techs.AddItem(CreateProximityMineTemplate());
 	//Techs.AddItem(CreateFlamethrowerTemplate()); // Replacing random heavy weapon tech template with flamethrower tech template instead
 	Techs.AddItem(CreateShredderGunTemplate());
 	//Techs.AddItem(CreateHellfireProjectorTemplate()); // Replacing random powered weapon tech template with hellfire projector tech template instead
@@ -380,6 +381,37 @@ static function X2DataTemplate CreatePsiBombGrenadeTemplate()
 	
 	// Requirements
 	Template.Requirements.RequiredTechs.AddItem('AvatarInterrogation');
+
+	// Cost
+	Artifacts.ItemTemplateName = 'EleriumCore';
+	Artifacts.Quantity = 1;
+	Template.Cost.ArtifactCosts.AddItem(Artifacts);
+
+	return Template;
+}
+
+static function X2DataTemplate CreateProximityMineTemplate()
+{
+	local X2TechTemplate Template;
+	local ArtifactCost Artifacts;
+
+	`CREATE_X2TEMPLATE(class'X2TechTemplate', Template, 'ProximityMineTech');
+	Template.PointsToComplete = StafferXDays(1, 10);
+	Template.strImage = ""; // TODO: Get content from graphicker and insert image string
+	Template.bProvingGround = true;
+	Template.SortingTier = 3;
+
+	if ( !default.bBuildGrenadesInEngineering )
+	{
+		Template.bRepeatable = true;
+		Template.ResearchCompletedFn = GiveRandomItemReward;
+
+		// Item Reward
+		Template.ItemRewards.AddItem('ProximityMine');
+	}
+	
+	// Requirements
+	Template.Requirements.RequiredTechs.AddItem('AutopsyChryssalis');
 
 	// Cost
 	Artifacts.ItemTemplateName = 'EleriumCore';

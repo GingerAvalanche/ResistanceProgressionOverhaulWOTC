@@ -18,7 +18,7 @@ static function CHEventListenerTemplate CreateListenerTemplate_OnCleanupTactical
     Template.RegisterInTactical = true;
     Template.RegisterInStrategy = false;
 
-    Template.AddCHEvent('CleanupTacticalMission', OnCleanupTacticalMission, ELD_OnStateSubmitted);
+    Template.AddCHEvent('CleanupTacticalMission', OnCleanupTacticalMission, ELD_Immediate);
     `LOG("Register Event CleanupTacticalMission",, 'RPO');
 
     return Template;
@@ -26,7 +26,7 @@ static function CHEventListenerTemplate CreateListenerTemplate_OnCleanupTactical
 
 static function EventListenerReturn OnCleanupTacticalMission(Object EventData, Object EventSource, XComGameState GameState, Name Event, Object CallbackData)
 {
-	local XComGameState						NewGameState;
+	//local XComGameState						NewGameState;
 	local XComGameStateHistory				History;
     local XComGameState_BattleData			BattleData;
 	local XGBattle_SP						Battle;
@@ -40,9 +40,9 @@ static function EventListenerReturn OnCleanupTacticalMission(Object EventData, O
 	local array<name>						RolledLoot;
 	
 	History = `XCOMHISTORY;
-	NewGameState = class'XComGameStateContext_ChangeContainer'.static.CreateChangeState("Updating BattleData to add captured enemies as loot");
+	//NewGameState = class'XComGameStateContext_ChangeContainer'.static.CreateChangeState("Updating BattleData to add captured enemies as loot");
 	BattleData = XComGameState_BattleData(EventData);
-	BattleData = XComGameState_BattleData(NewGameState.ModifyStateObject(class'XComGameState_BattleData', BattleData.ObjectID));
+	BattleData = XComGameState_BattleData(GameState.ModifyStateObject(class'XComGameState_BattleData', BattleData.ObjectID));
 	Battle = XGBattle_SP(`BATTLE);
 	LootManager = class'X2LootTableManager'.static.GetLootTableManager();
 
@@ -98,10 +98,10 @@ static function EventListenerReturn OnCleanupTacticalMission(Object EventData, O
 		}
 	}
 
-	if (NewGameState.GetNumGameStateObjects() > 0)
-		History.AddGameStateToHistory(NewGameState);
+	if (GameState.GetNumGameStateObjects() > 0)
+		History.AddGameStateToHistory(GameState);
 	else
-		History.CleanupPendingGameState(NewGameState);
+		History.CleanupPendingGameState(GameState);
 
 	return ELR_NoInterrupt;
 }
