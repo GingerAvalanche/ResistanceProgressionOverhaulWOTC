@@ -176,42 +176,42 @@ CodeName="DaRedUnsGoFasta"
 LongDescription="There was one repeated line of code in every comment: \"Da Red 'Uns Go Fasta.\" Unexpected, but intriguing. R. Tygan."
 UnlockedDescription=""
 
-[AdvTrooperInterrogation X2TechTemplate]
+[AdventTrooperInterrogation X2TechTemplate]
 DisplayName="ADVENT Trooper Interrogation"
 Summary="Interrogate the grunt."
 CodeName="Goomba"
 LongDescription="He didn't actually know anything. But we did manage to develop some armor based on how he resisted our torture techniques. Unexpected, but intriguing. R. Tygan. P.S. The Geneva Convention is so 'twenty years ago.'"
 UnlockedDescription=""
 
-[AdvStunLancerInterrogation X2TechTemplate]
+[AdventStunLancerInterrogation X2TechTemplate]
 DisplayName="ADVENT Stun Lancer Interrogation"
 Summary="Interrogate the grunt with the glow stick."
 CodeName="RaveMaster"
 LongDescription="He didn't actually know anything either. But we did manage to develop some new ammo based on having random scientists shoot him, one after the other. Unexpected, but intriguing. R. Tygan. P.S. The Geneva Convention is so 'twenty years ago.'"
 UnlockedDescription=""
 
-[AdvOfficerInterrogation X2TechTemplate]
+[AdventOfficerInterrogation X2TechTemplate]
 DisplayName="ADVENT Officer Tom Interrogation"
 Summary="Interrogate the grunt with the fancy helmet and the nametag."
 CodeName="TooRoughForTom"
 LongDescription="Turns out this guy is the ADVENT Captain. Every single one of them. It's this one guy. His name is Tom. Unexpected, but intriguing. R. Tygan."
 UnlockedDescription=""
 
-[AdvShieldbearerInterrogation X2TechTemplate]
+[AdventShieldbearerInterrogation X2TechTemplate]
 DisplayName="ADVENT Shieldbearer Interrogation"
 Summary="Interrogate the grunt who punches the ground."
 CodeName="GroundPuncher"
 LongDescription="Turns out the secret to semi-corporeal ballistic shielding is just punching the ground. Unexpected, but intriguing. R. Tygan."
 UnlockedDescription=""
 
-[AdvPriestInterrogation X2TechTemplate]
+[AdventPriestInterrogation X2TechTemplate]
 DisplayName="ADVENT Priest Interrogation"
 Summary="Interrogate the grunt who glows purple."
 CodeName="PurpleDrank!"
 LongDescription="Apparently, aliens really like the color purple. Unexpected, but intriguing. R. Tygan."
 UnlockedDescription=""
 
-[AdvPurifierInterrogation X2TechTemplate]
+[AdventPurifierInterrogation X2TechTemplate]
 DisplayName="ADVENT Purifier Interrogation"
 Summary="Interrogate the grunt who likes fire. He, uh... he really likes fire."
 CodeName="ILikeFire"
@@ -295,14 +295,14 @@ CodeName="BoobsAreGoodMkay"
 LongDescription="The snake tried to seduce me. Unfortunately, I'm gay. I know what you're thinking: Unexpected, but intriguing. R. Tygan."
 UnlockedDescription=""
 
-[AdvMECInterrogation X2TechTemplate]
+[AdventMECInterrogation X2TechTemplate]
 DisplayName="ADVENT MEC Interrogation"
 Summary="Interrogate the Six Billion Dollar Man."
 CodeName="ShoulderMountedGrenadeLauncher"
 LongDescription="We actually got along really well. It even gave me its shoulder-mounted grenade launcher. Unfortunately, I dropped it. Unexpected, but intriguing. R. Tygan."
 UnlockedDescription=""
 
-[AdvMECMk2Interrogation X2TechTemplate]
+[AdventMECMk2Interrogation X2TechTemplate]
 DisplayName="The Other ADVENT MEC Interrogation"
 Summary="Interrogate the Six Billion And One Dollar Man."
 CodeName="RedShoulderMountedGrenadeLauncher"
@@ -385,6 +385,16 @@ FriendlyName="Captured ADVENT Shieldbearer"
 FriendlyNamePlural="Captured ADVENT Shieldbearers"
 BriefSummary="These cadavers exhibit far more muscle and bone density than other ADVENT bodies we've recovered, and remain surprisingly warm to the touch for hours after their death." 
 
+[CapturedAdventPriest X2ItemTemplate]
+FriendlyName="Captured ADVENT Priest"
+FriendlyNamePlural="Captured ADVENT Priests"
+BriefSummary="These like the color purple. Turns out their uniforms are actually super-purple. Yes, I know it's called 'ultraviolet' but I call it super-purple." 
+
+[CapturedAdventPurifier X2ItemTemplate]
+FriendlyName="Captured ADVENT Purifier"
+FriendlyNamePlural="Captured ADVENT Purifiers"
+BriefSummary="These cadavers are still slightly singed, because in life they really liked fire. Wait a second, this is a captive, not a corpse. Hmm. As Tygan would say: Unexpected, but intriguing." 
+
 [CapturedAdventPsiWitch X2ItemTemplate]
 FriendlyName="Captured Avatar"
 FriendlyNamePlural="Captured Avatars"
@@ -398,7 +408,7 @@ BriefSummary="Much of the articulation, weapon and power systems that comprise t
 [CapturedAdventMECMk2 X2ItemTemplate]
 FriendlyName="Captured ADVENT MEC Mk2"
 FriendlyNamePlural="Captured ADVENT MEC Mk2s"
-BriefSummary="Much of the articulation, weapon and power systems that comprise these \"MEC\" units bear a striking similarity to early robotic combat prototypes devised by the late Dr. Shen."
+BriefSummary="Much of the articulation, weapon and power systems that comprise these \"MEC\" units bear a striking similarity to early robotic combat prototypes devised by the late Dr. Shen. These ones are red. They, um... \"go fasta\"...?"
 
 [CapturedSectoid X2ItemTemplate]
 FriendlyName="Captured Sectoid"
@@ -463,4 +473,4 @@ BriefSummary="Long after the massive Turret has expired, its chemical pumps cont
 [CorpseAdventMECMk2 X2ItemTemplate]
 FriendlyName="ADVENT MEC Mk2 Wreck"
 FriendlyNamePlural="ADVENT MEC Mk2 Wrecks"
-BriefSummary="Much of the articulation, weapon and power systems that comprise these \"MEC\" units bear a striking similarity to early robotic combat prototypes devised by the late Dr. Shen."
+BriefSummary="Much of the articulation, weapon and power systems that comprise these \"MEC\" units bear a striking similarity to early robotic combat prototypes devised by the late Dr. Shen. These ones are red. They, um... \"go fasta\"...?"

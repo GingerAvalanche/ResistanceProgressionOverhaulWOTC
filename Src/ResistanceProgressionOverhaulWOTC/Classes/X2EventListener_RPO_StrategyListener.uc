@@ -90,6 +90,7 @@ static function EventListenerReturn OnCleanupTacticalMission(Object EventData, O
 						{
 							BattleData.AutoLootBucket.AddItem(LootRoll); // Add the loot name to the battle data's loot bucket - treat as AutoLoot since I don't know how to block out evacs for now
 						}
+						RolledLoot.Length = 0; // I can't tell if RollForLootTable replaces the second parameter or just adds to it. If the latter, this should fix that.
 						break; // There's only one corpse loot table, so we can skip scanning the rest
 					}
 				}
@@ -98,10 +99,8 @@ static function EventListenerReturn OnCleanupTacticalMission(Object EventData, O
 		}
 	}
 
-	if (GameState.GetNumGameStateObjects() > 0)
-		History.AddGameStateToHistory(GameState);
-	else
-		History.CleanupPendingGameState(GameState);
+	History.AddGameStateToHistory(GameState);
+	History.CleanupPendingGameState(GameState);
 
 	return ELR_NoInterrupt;
 }
