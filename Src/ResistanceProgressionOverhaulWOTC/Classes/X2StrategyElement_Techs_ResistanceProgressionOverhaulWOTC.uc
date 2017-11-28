@@ -732,7 +732,7 @@ static function X2DataTemplate CreateLightEleriumArmorTemplate()
 	Resources.Quantity = 10;
 	Template.Cost.ResourceCosts.AddItem(Resources);
 
-	Resources.ItemTemplateName = 'SpectreCorpse';
+	Resources.ItemTemplateName = 'CorpseSpectre';
 	Resources.Quantity = 1;
 	Template.Cost.ResourceCosts.AddItem(Resources);
 
@@ -781,7 +781,7 @@ static function X2DataTemplate CreateMediumEleriumArmorTemplate()
 	Resources.Quantity = 10;
 	Template.Cost.ResourceCosts.AddItem(Resources);
 
-	Resources.ItemTemplateName = 'GatekeeperCorpse';
+	Resources.ItemTemplateName = 'CorpseGatekeeper';
 	Resources.Quantity = 1;
 	Template.Cost.ResourceCosts.AddItem(Resources);
 
@@ -830,7 +830,7 @@ static function X2DataTemplate CreateHeavyEleriumArmorTemplate()
 	Resources.Quantity = 10;
 	Template.Cost.ResourceCosts.AddItem(Resources);
 
-	Resources.ItemTemplateName = 'AndromedonCorpse';
+	Resources.ItemTemplateName = 'CorpseAndromedon';
 	Resources.Quantity = 1;
 	Template.Cost.ResourceCosts.AddItem(Resources);
 
