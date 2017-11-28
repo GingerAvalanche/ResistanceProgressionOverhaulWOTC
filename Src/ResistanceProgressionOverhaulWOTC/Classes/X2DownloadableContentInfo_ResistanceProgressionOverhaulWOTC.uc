@@ -372,33 +372,25 @@ static function PatchItems()
 
 static function PatchWeapons()
 {
-	//local X2ItemTemplateManager ItemTemplateManager;
-	//local X2WeaponTemplate WeaponTemplate;
+	local X2ItemTemplateManager ItemTemplateManager;
+	local X2WeaponTemplate WeaponTemplate;
 
-	//ItemTemplateManager = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
+	ItemTemplateManager = class'X2ItemTemplateManager'.static.GetItemTemplateManager();
 	
-	//Placeholder. Will be used eventually.
+	WeaponTemplate = X2WeaponTemplate(ItemTemplateManager.FindItemTemplate('SKULLJACK'));
+	WeaponTemplate.GameArchetype = "SkullJackRevamped.Archetypes.WP_SkullJackRevamped";
 }
 
 static function PatchAbilities()
 {
 	local X2AbilityTemplateManager	AbilityManager;
 	local X2AbilityTemplate			Ability;
-	local X2Effect_DamageImmunity	DamageImmunity;
 	local X2Condition_UnitProperty	LivingHostileTargetProperty; // This is a copy of the protected X2Ability variable, because the original is protected.
 
 	AbilityManager = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
 
-	Ability = AbilityManager.FindAbilityTemplate('RobotImmunities');
-	DamageImmunity = new class'X2Effect_DamageImmunity';
-	DamageImmunity.BuildPersistentEffect(1, true, true, true);
-	DamageImmunity.SetDisplayInfo(ePerkBuff_Passive, Ability.LocFriendlyName, Ability.GetMyLongDescription(), Ability.IconImage,,,Ability.AbilitySourceName);
-	DamageImmunity.ImmuneTypes.AddItem('Fire');
-	DamageImmunity.ImmuneTypes.AddItem('Poison');
-	DamageImmunity.ImmuneTypes.AddItem(class'X2Item_DefaultDamageTypes'.default.ParthenogenicPoisonType);
-	//DamageImmunity.ImmuneTypes.AddItem('Unconscious'); // Make robots unconsciousable!
-	DamageImmunity.ImmuneTypes.AddItem('Panic');
-	Ability.AddTargetEffect(DamageImmunity);
+	Ability = AbilityManager.FindAbilityTemplate('DeathExplosion');
+	Ability.AbilityTriggers.Length = Ability.AbilityTriggers.Length-1; // The Unconscious trigger for the Gatekeeper DeathExplosion is the last inserted, so this should be fine
 
 	Ability = AbilityManager.FindAbilityTemplate('SKULLMINEAbility');
 	LivingHostileTargetProperty = new class'X2Condition_UnitProperty';

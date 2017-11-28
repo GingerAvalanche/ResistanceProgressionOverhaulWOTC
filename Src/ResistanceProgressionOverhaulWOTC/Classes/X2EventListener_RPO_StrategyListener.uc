@@ -83,19 +83,21 @@ static function EventListenerReturn OnCleanupTacticalMission(Object EventData, O
 					if ( InStr(string(UnitLoot.LootTableName),"BaseLoot") != INDEX_NONE ) // Is it the corpse loot table?
 					{
 						LootTableName = name(Repl(string(UnitLoot.LootTableName), "BaseLoot", "CapturedLoot")); // Get the CapturedLoot table's name
-						`LOG("LootManager rolling on" @ LootTableName, , 'RPO');
 						LootManager.RollForLootTable(LootTableName, RolledLoot); // Roll on the CapturedLoot table
-						`LOG("Loot found:" @ RolledLoot[0], , 'RPO');
-						foreach RolledLoot(LootRoll) // For every item in the roll (should only ever be one, but may change later for reasons unknown right now)
-						{
-							BattleData.AutoLootBucket.AddItem(LootRoll); // Add the loot name to the battle data's loot bucket - treat as AutoLoot since I don't know how to block out evacs for now
-						}
-						RolledLoot.Length = 0; // I can't tell if RollForLootTable replaces the second parameter or just adds to it. If the latter, this should fix that.
+						`LOG("LootManager rolling on" @ LootTableName @ ". Loot found:" @ RolledLoot[0], , 'RPO');
 						break; // There's only one corpse loot table, so we can skip scanning the rest
 					}
 				}
-				break; // Each enemy can only have one unconscious effect on it at a time, so we can ignore the rest of the effects
+				break; // Each enemy only needs one unconscious effect on it, so we can ignore the rest of the effects
 			}
+		}
+	}
+
+	if (RolledLoot.Length > 0)
+	{
+		foreach RolledLoot(LootRoll) // For every item in the roll
+		{
+			BattleData.AutoLootBucket.AddItem(LootRoll); // Add the loot name to the battle data's loot bucket - treat as AutoLoot since I don't know how to block out evacs for now
 		}
 	}
 
