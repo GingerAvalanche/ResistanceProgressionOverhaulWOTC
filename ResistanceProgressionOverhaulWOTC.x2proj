@@ -7,6 +7,7 @@
     <SteamPublishID>0</SteamPublishID>
     <AssemblyName>ResistanceProgressionOverhaulWOTC</AssemblyName>
     <RootNamespace>ResistanceProgressionOverhaulWOTC</RootNamespace>
+    <ProjectGuid>{526a4749-1482-4f31-ac6f-d24e85e1cb7c}</ProjectGuid>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Config\XComEditor.ini">
@@ -28,6 +29,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Config\XComRPO_WOTC.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\AVG_CombatGeneticsLab.umap">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\AVG_Laboratory_A.umap">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Content\SkullJackRevamped.upk">
@@ -59,6 +66,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2Item_RPOArtifact.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2StrategyElement_CombatGeneticsLab.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2StrategyElement_LaboratoryUpgrade.uc">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2StrategyElement_Techs_ResistanceProgressionOverhaulWOTC.uc">

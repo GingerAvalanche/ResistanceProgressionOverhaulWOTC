@@ -13,6 +13,7 @@ static event OnPostTemplatesCreated()
 	PatchWeapons();
 	PatchAbilities();
 	PatchCharacters();
+	PatchLabs();
 }
 
 static function PatchArcThrowingIntoSkullJack()
@@ -425,4 +426,20 @@ static function PatchCharacters()
 
 	Character = CharacterManager.FindCharacterTemplate('PrototypeSectopod');
 	Character.Abilities.AddItem('UnconsciousStun');
+}
+
+static function PatchLabs() {
+	local X2StrategyElementTemplateManager StratMgr;
+	local X2StrategyElementTemplate LaboratoryTemplate;
+	local X2FacilityTemplate LabFacilityTemplate;
+	
+	StratMgr = class'X2StrategyElementTemplateManager'.static.GetStrategyElementTemplateManager();
+
+	LaboratoryTemplate = StratMgr.FindStrategyElementTemplate('Laboratory');
+	if (LaboratoryTemplate != none) {
+		LabFacilityTemplate = X2FacilityTemplate(LaboratoryTemplate);
+		LabFacilityTemplate.Upgrades.AddItem('Laboratory_TestUpgrade');
+	} else {
+		`log("TEMPLATE NOT FOUND!");
+	}
 }
