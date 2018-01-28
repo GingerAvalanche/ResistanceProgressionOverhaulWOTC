@@ -12,6 +12,7 @@ static event OnPostTemplatesCreated()
 	PatchItems();
 	PatchWeapons();
 	PatchAbilities();
+	PatchCharacters();
 }
 
 static function PatchArcThrowingIntoSkullJack()
@@ -385,12 +386,19 @@ static function PatchAbilities()
 {
 	local X2AbilityTemplateManager	AbilityManager;
 	local X2AbilityTemplate			Ability;
-	local X2Condition_UnitProperty	LivingHostileTargetProperty; // This is a copy of the protected X2Ability variable, because the original is protected.
+	local X2AbilityTrigger			AbilityTrigger;
+	local X2Condition_UnitProperty	LivingHostileTargetProperty; // This is a copy of the X2Ability variable, because the original is protected.
 
 	AbilityManager = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
 
 	Ability = AbilityManager.FindAbilityTemplate('DeathExplosion');
-	Ability.AbilityTriggers.Length = Ability.AbilityTriggers.Length-1; // The Unconscious trigger for the Gatekeeper DeathExplosion is the last inserted, so this should be fine
+	foreach Ability.AbilityTriggers(AbilityTrigger)
+	{
+		if ( X2AbilityTrigger_EventListener(AbilityTrigger).ListenerData.EventID == 'UnitUnconscious' )
+		{
+			Ability.AbilityTriggers.RemoveItem(AbilityTrigger);
+		}
+	}
 
 	Ability = AbilityManager.FindAbilityTemplate('SKULLMINEAbility');
 	LivingHostileTargetProperty = new class'X2Condition_UnitProperty';
@@ -400,4 +408,21 @@ static function PatchAbilities()
 	LivingHostileTargetProperty.ExcludeHostileToSource=false;
 	LivingHostileTargetProperty.TreatMindControlledSquadmateAsHostile=true;
 	Ability.AbilityTargetConditions.AddItem(LivingHostileTargetProperty); // Vanilla Skullmine can target unconscious. Haven't figured out how, but default exclusions seem to fix it.
+}
+
+static function PatchCharacters()
+{
+	local X2CharacterTemplateManager	CharacterManager;
+	local X2CharacterTemplate			Character;
+
+	CharacterManager = class'X2CharacterTemplateManager'.static.GetCharacterTemplateManager();
+
+	Character = CharacterManager.FindCharacterTemplate('Gatekeeper');
+	Character.Abilities.AddItem('UnconsciousStun');
+
+	Character = CharacterManager.FindCharacterTemplate('Sectopod');
+	Character.Abilities.AddItem('UnconsciousStun');
+
+	Character = CharacterManager.FindCharacterTemplate('PrototypeSectopod');
+	Character.Abilities.AddItem('UnconsciousStun');
 }
