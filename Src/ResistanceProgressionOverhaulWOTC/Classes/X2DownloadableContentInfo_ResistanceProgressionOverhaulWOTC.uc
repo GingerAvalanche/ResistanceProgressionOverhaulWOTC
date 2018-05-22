@@ -388,6 +388,7 @@ static function PatchAbilities()
 	local X2AbilityTemplateManager	AbilityManager;
 	local X2AbilityTemplate			Ability;
 	local X2AbilityTrigger			AbilityTrigger;
+	local X2Effect					TargetEffect;
 	local X2Condition_UnitProperty	LivingHostileTargetProperty; // This is a copy of the X2Ability variable, because the original is protected.
 
 	AbilityManager = class'X2AbilityTemplateManager'.static.GetAbilityTemplateManager();
@@ -398,6 +399,24 @@ static function PatchAbilities()
 		if ( X2AbilityTrigger_EventListener(AbilityTrigger).ListenerData.EventID == 'UnitUnconscious' )
 		{
 			Ability.AbilityTriggers.RemoveItem(AbilityTrigger);
+		}
+	}
+	
+	Ability = AbilityManager.FindAbilityTemplate('SectopodInitialState');
+	foreach Ability.AbilityTargetEffects(TargetEffect)
+	{
+		if ( X2Effect_OverrideDeathAction(TargetEffect).DeathActionClass == class'X2Action_ExplodingUnitDeathAction' )
+		{
+			X2Effect_OverrideDeathAction(TargetEffect).DeathActionClass = class'X2Action_ExplodingUnitDeathAction_RPO';
+		}
+	}
+	
+	Ability = AbilityManager.FindAbilityTemplate('GatekeeperInitialState');
+	foreach Ability.AbilityTargetEffects(TargetEffect)
+	{
+		if ( X2Effect_OverrideDeathAction(TargetEffect).DeathActionClass == class'X2Action_ExplodingUnitDeathAction' )
+		{
+			X2Effect_OverrideDeathAction(TargetEffect).DeathActionClass = class'X2Action_ExplodingUnitDeathAction_RPO';
 		}
 	}
 
@@ -411,13 +430,14 @@ static function PatchAbilities()
 	Ability.AbilityTargetConditions.AddItem(LivingHostileTargetProperty); // Vanilla Skullmine can target unconscious. Haven't figured out how, but default exclusions seem to fix it.
 }
 
+// Removing for now because the UnconsciousStun does not override the X2Action explosions - the new X2Action extension will do that instead
 static function PatchCharacters()
-{
+{/*
 	local X2CharacterTemplateManager	CharacterManager;
 	local X2CharacterTemplate			Character;
 
 	CharacterManager = class'X2CharacterTemplateManager'.static.GetCharacterTemplateManager();
-
+	
 	Character = CharacterManager.FindCharacterTemplate('Gatekeeper');
 	Character.Abilities.AddItem('UnconsciousStun');
 
@@ -425,7 +445,7 @@ static function PatchCharacters()
 	Character.Abilities.AddItem('UnconsciousStun');
 
 	Character = CharacterManager.FindCharacterTemplate('PrototypeSectopod');
-	Character.Abilities.AddItem('UnconsciousStun');
+	Character.Abilities.AddItem('UnconsciousStun');*/
 }
 
 static function PatchLabs() {

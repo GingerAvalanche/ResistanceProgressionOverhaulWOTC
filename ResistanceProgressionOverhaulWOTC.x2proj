@@ -59,6 +59,12 @@
     <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2Ability_ArcThrower.uc">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2Action_ExplodingUnitDeathAction_DeathOnly.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2Action_ExplodingUnitDeathAction_RPO.uc">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Src\ResistanceProgressionOverhaulWOTC\Classes\X2DownloadableContentInfo_ResistanceProgressionOverhaulWOTC.uc">
       <SubType>Content</SubType>
     </Content>

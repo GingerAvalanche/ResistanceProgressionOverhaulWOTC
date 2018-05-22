@@ -1,6 +1,4 @@
-class UIScreenListener_LootRecovered_RPO extends UIScreenListener;
-
-// DEPRECATED
+class UIScreenListener_LootRecovered_RPO extends UIScreenListener deprecated;
 /*
 event OnInit(UIScreen Screen)
 {
